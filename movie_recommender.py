@@ -9,7 +9,7 @@ def get_index_from_title(title):
 	return df[df.title == title]["index"].values[0]
 
 #Read CSV File
-df = pd.read("movie_dataset.txt")
+df = pd.read_csv("movie_dataset.csv")
 #Print df.columns
 
 #Select Features
