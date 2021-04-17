@@ -38,5 +38,5 @@ i = 0
 for movie in sorted_similar_movies:
     print(get_title_from_index(movie[0]))
     i += 1
-    if i > 50:
+    if i > 10:
         break
