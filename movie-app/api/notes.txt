@@ -1,0 +1,11 @@
+Get python virtualenv
+$ sudo pip3 install virtualenv 
+$ virtualenv -p python3 env3
+$ source ./venv/bin/activate
+$ deactivate
+
+For the .env file to connect flask + react
+when in venv and in api directory: $ pip install python-dotenv
+
+In package-lock.json / package.json, add "proxy": "{}", {} = the link for the python3 file right before "packages"
+
