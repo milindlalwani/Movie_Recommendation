@@ -1,11 +1,12 @@
 import React, { Component, useState,useEffect } from 'react';
 // import './App.css';
-// import {Route, Link} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 // import NavBar from './components/navbar.jsx';
 // import Home from './components/pages/home.jsx';
 // import Search from './components/pages/search.jsx';
 // import Movie from './components/movie.jsx';
 import {Home} from './components/pages/home.js';
+import {Search} from './components/pages/search.js';
 
 function App() {
 
@@ -19,9 +20,15 @@ function App() {
     //   </div>
     //   <Movie />
     // </div>
-      <div>
-        <Home />
-      </div>
+
+      // <div>
+      //   <Home />
+      // </div>
+
+      <React.Fragment>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/search" component={Search} />
+      </React.Fragment>
   );
 }
 
@@ -29,12 +36,12 @@ function App() {
 //   //state = {  }
 //   render() { 
 //     return (
-//       <React.Fragment>
-//         <NavBar />
-//         <Route exact path="/" component={Home} />
-//         <Route exact path="/search" component={Search} />
-//         <Movie></Movie>
-//       </React.Fragment>
+      // <React.Fragment>
+      //   <NavBar />
+      //   <Route exact path="/" component={Home} />
+      //   <Route exact path="/search" component={Search} />
+      //   <Movie></Movie>
+      // </React.Fragment>
 //     );
 //   }
 // }
